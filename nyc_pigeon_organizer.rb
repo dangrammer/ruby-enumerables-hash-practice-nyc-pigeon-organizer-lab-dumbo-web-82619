@@ -1,3 +1,35 @@
+def nyc_pigeon_organizer(data)
+  profiles = {} 
+  
+  data.each do |attribute, info|
+    info.each do |detail, name_array|
+      name_array.each do |name|
+        if profiles[name].nil?
+          profiles[name] = {}
+          profiles[name][attribute] = []
+        else
+          profiles[name][attribute] = []
+        end
+      end
+    end
+  end
+  profiles.each do |name, values|
+    values.each do |hash_value, array|
+      data.each do |attribute, info|
+        info.each do |detail, name_array|
+          name_array.each do |element|
+            if element == name && hash_value == attribute
+              profiles[name][hash_value] << detail.to_s
+            end
+          end 
+        end
+      end
+    end
+  end
+  return profiles
+end
+
+
 =begin
 def nyc_pigeon_organizer(data)
   profiles = {} #reserve hash for final output
@@ -45,45 +77,3 @@ end
 =end
 
 
-def nyc_pigeon_organizer(data)
-  profiles = {} 
-  
-  data.each do |attribute, info|
-    info.each do |detail, name_array|
-      name_array.each do |name|
-        if profiles[name].nil?
-          profiles[name] = {}
-          profiles[name][attribute] = []
-        else
-          profiles[name][attribute] = []
-        end
-      end
-    end
-  end
-  profiles.each do |name, values|
-    values.each do |hash_value, array|
-      data.each do |attribute, info|
-        info.each do |detail, name_array|
-          name_array.each do |element|
-            if element == name && hash_value == attribute
-              profiles[name][hash_value] << detail.to_s
-            end
-          end 
-        end
-      end
-    end
-  end
-  return profiles
-end
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
