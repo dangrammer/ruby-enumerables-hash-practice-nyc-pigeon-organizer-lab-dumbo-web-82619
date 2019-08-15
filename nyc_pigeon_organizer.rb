@@ -64,6 +64,7 @@ def nyc_pigeon_organizer(data)
     values.each do |hash_value, array|
       data.each do |attribute, info|
         info.each do |detail, name_array|
+          if name_array
   
   
   
