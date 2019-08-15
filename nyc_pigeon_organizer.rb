@@ -40,7 +40,9 @@ def nyc_pigeon_organizer(data)
   return profiles
 end
 =end    
-    require 'pry'
+    
+    
+    
 def nyc_pigeon_organizer(data)
   profiles = {} 
   names = data.values[0].values.flatten.uniq
@@ -52,7 +54,6 @@ def nyc_pigeon_organizer(data)
     data.each do |category, info| 
       info.each do |attribute, bird| 
         if bird.include?(name) 
-          binding.pry
           bird_attributes.push(attribute.to_s) 
         end
         bird_profile[category] = bird_attributes
