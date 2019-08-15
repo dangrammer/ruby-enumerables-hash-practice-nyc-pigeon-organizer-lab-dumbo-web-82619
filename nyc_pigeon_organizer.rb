@@ -66,6 +66,7 @@ def nyc_pigeon_organizer(data)
         info.each do |detail, name_array|
           name_array.each do |element|
             if element == name && hash_value == attribute
+              profiles[]
   
   
   
