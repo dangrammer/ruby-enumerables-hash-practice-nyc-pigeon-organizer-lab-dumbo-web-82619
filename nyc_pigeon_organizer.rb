@@ -56,7 +56,11 @@ def nyc_pigeon_organizer(data)
           profiles[name][attribute] = []
         else
           profiles[name][attribute] = []
-          
+        end
+      end
+    end
+  end
+  
   
   
   
