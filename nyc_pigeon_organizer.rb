@@ -47,5 +47,7 @@ end
 
 def nyc_pigeon_organizer(data)
   profiles = {} 
+  
+  data.each
     
     
