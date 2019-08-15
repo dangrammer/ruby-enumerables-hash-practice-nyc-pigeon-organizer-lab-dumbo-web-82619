@@ -1,26 +1,5 @@
 =begin
 def nyc_pigeon_organizer(data)
-  profiles = {}
-  colors = []
-  gender = []
-  habitat = []
-
-  data.values[0].values.flatten.uniq.each do |name|
-    data.each do |key, value|
-      value.each do |key, value|
-      if value.include?(name)
-        colors.push(key)
-      end
-      end
-    end
-    profiles[name] = {:color => colors, :gender => gender, :lives => habitat}
-  end
-  return profiles
-end
-
-
-
-def nyc_pigeon_organizer(data)
   profiles = {} #reserve hash for final output
   names = data.values[0].values.flatten.uniq #build array of names
 
@@ -41,12 +20,12 @@ def nyc_pigeon_organizer(data)
 end
 =end    
     
-    
-    
+
+=begin    
 def nyc_pigeon_organizer(data)
   profiles = {} 
   names = data.values[0].values.flatten.uniq
-#binding.pry
+
   names.each do |name| 
     bird_profile = {} 
     bird_attributes = [] 
@@ -63,6 +42,10 @@ def nyc_pigeon_organizer(data)
   end
   return profiles
 end   
-    
+=end
+
+
+def nyc_pigeon_organizer(data)
+  profiles = {} 
     
     
