@@ -67,6 +67,15 @@ def nyc_pigeon_organizer(data)
           name_array.each do |element|
             if element == name && hash_value == attribute
               profiles[name][hash_value] << detail.to_s
+            end
+          end 
+        end
+      end
+    end
+  end
+  return profiles
+end
+
   
   
   
