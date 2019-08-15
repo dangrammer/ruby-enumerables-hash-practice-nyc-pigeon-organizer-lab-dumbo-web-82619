@@ -61,7 +61,8 @@ def nyc_pigeon_organizer(data)
     end
   end
   profiles.each do |name, values|
-    values.each do |hash_value, 
+    values.each do |hash_value, array|
+      
   
   
   
