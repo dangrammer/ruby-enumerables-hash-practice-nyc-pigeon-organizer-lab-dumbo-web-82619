@@ -48,6 +48,15 @@ end
 def nyc_pigeon_organizer(data)
   profiles = {} 
   
-  data.each
+  data.each do |attribute, 
+  
+  
+  
+  
+  
+  
+  
+  
+  
     
     
