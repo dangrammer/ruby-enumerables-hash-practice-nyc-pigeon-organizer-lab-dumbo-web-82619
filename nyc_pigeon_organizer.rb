@@ -53,6 +53,8 @@ def nyc_pigeon_organizer(data)
       name_array.each do |name|
         if profiles[name].nil?
           profiles[name] = {}
+          profiles[name][attribute] = []
+        else
           
   
   
